@@ -44,7 +44,6 @@ public class AproksimatorAlkohola {
 			System.out.println("Unesite kolicinu popijenog pica (ml): ");
 			double kol = sc.nextDouble();
 			suma += kol*procenat;
-			//id = sc.nextInt();
 			System.out.print("Unesite id pica koje ste pili ili -1 ako ste vec uneli sva pica koja ste popili: ");
 			id = sc.nextInt();
 		}
@@ -70,31 +69,36 @@ public class AproksimatorAlkohola {
 			poeni = 0;
 			zabrana = 0;
 			
-		}else if(BAC > 0.51 && BAC <= 0.8) {
+		}
+		else if(BAC > 0.51 && BAC <= 0.8) {
 			naziv = "Srednja alkoholisanost";
 			kazna = "10.000 - 20.000 din";
 			poeni = 6;
 			zabrana = 3;
 			
-		}else if(BAC > 0.81 && BAC <= 1.2) {
+		}
+		else if(BAC > 0.81 && BAC <= 1.2) {
 			naziv = "Visoka alkoholisanost";
 			kazna = "20.000 - 40.000 din";
 			poeni = 8;
 			zabrana = 4;
 			
-		}else if(BAC>1.21 && BAC<=1.6) {
+		}
+		else if(BAC>1.21 && BAC<=1.6) {
 			naziv = "Teska alkoholisanost";
 			kazna = "100.000 - 120.000 din";
 			poeni = 9;
 			zabrana = 8;
 			
-		}else if(BAC>1.61 && BAC<=2.0) {
+		}
+		else if(BAC>1.61 && BAC<=2.0) {
 			naziv = "Veoma teska alkoholisanost";
 			kazna = "100.000 - 120.000 din";
 			poeni = 14;
 			zabrana = 8;
 			
-		}else if(BAC>2.0) {
+		}
+		else if(BAC>2.0) {
 			naziv = "Potpuna alkoholisanost";
 			kazna = "30 - 60 dana zatvora";
 			poeni = 15;
@@ -108,7 +112,7 @@ public class AproksimatorAlkohola {
 		System.out.println("-----------------------------");
 		System.out.println("Kazna: " + kazna);
 		System.out.println("Kazneni poeni: " + poeni);
-		System.out.println("Zabrana voûnje: " + zabrana + " meseci");
+		System.out.println("Zabrana vo≈ænje: " + zabrana + " meseci");
 		System.out.println("-----------------------------");
 	
 	}
